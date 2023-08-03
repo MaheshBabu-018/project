@@ -1,7 +1,7 @@
 body {
   background-color:white;
 }
-ul {
+.navbar{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -9,11 +9,11 @@ ul {
   background-color: #38444d;
 }
 
-li {
+.navbar li {
   float: left;
 }
 
-li a, .dropbtn {
+.navbar li a, .dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -21,11 +21,11 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+.navbar li a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
 
-li.dropdown {
+.navbar li.dropdown {
   display: inline-block;
 }
 
@@ -50,4 +50,67 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+
+/* Mobile Page Css */
+
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    border: 1px solid #c6cacf;
+}
+.item:hover{
+    border: 1px solid #c6cacf;
+    box-shadow: 0 8px 8px -8px #c6cacf;
+}
+.details{
+    text-align: left;
+    display: flex;
+   flex-direction: column;
+   padding: 5%;
+   margin: 1%;
+
+}
+.title{
+    font-weight: bold;
+    color: #f05f40;
+    font-size: 20px;
+}
+.price{
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.mobile-ul{
+    list-style-type: none !important;
+    padding-top: 10px !important;
+    font-weight: 50 !important;
+}
+.fa
+{
+    color: #f05f40;
+}
+button{
+    margin-top:25px;
+    background:#6c757d;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 5px;
+    border: 2px solid #fff;
+    font-weight:bold;
+    cursor: pointer;
+}
+button:hover{
+   border: 2px solid #c6cacf;
 }
